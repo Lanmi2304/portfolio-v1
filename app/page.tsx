@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils/cn";
 
 export default function Home() {
   return (
-    <div className="border-muted/20 relative mx-auto max-w-3xl overflow-hidden rounded-md border md:mt-10">
+    <div className="border-muted relative mx-auto max-w-3xl overflow-hidden rounded-md border md:mt-10">
       <div className="relative flex h-fit w-full overflow-hidden bg-black/[0.96] p-4 antialiased md:p-10">
         <div
           className={cn(
