@@ -1,103 +1,82 @@
+import { Spotlight } from "@/components/spotlight";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { SOCIALS } from "@/lib/configs/socials-config";
+import { TECH_ICONS } from "@/lib/configs/tech-config";
+import { cn } from "@/lib/utils/cn";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="border-muted/20 relative mx-auto mt-10 max-w-3xl overflow-hidden rounded-md border">
+      <div className="relative flex h-fit w-full overflow-hidden bg-black/[0.96] p-10 antialiased">
+        <div
+          className={cn(
+            "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
+            "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]",
+          )}
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <Spotlight
+          className="-top-40 -left-20 md:-top-20 md:left-60"
+          fill="white"
+        />
+        <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
+          <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
+            Hi, I am Milan Pavlovic <br />
+          </h1>
+          <h3 className="bg-opacity-50 text mt-4 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-3xl text-transparent">
+            Fullstack Web developer
+          </h3>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="border-muted/20 relative grid gap-4 border bg-transparent p-4 backdrop-blur-xs md:p-10">
+        <div className="bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0, 0, 0, 0.7),rgba(255,255,255,0))] absolute top-0 z-[-2] h-screen w-screen"></div>
+        <div className="flex items-center gap-10">
+          <Avatar className="size-30">
+            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+          <div className="grid text-lg">
+            <p className="text-foreground/70 text-lg">
+              Im 23y old web developer from Belgrade, Serbia
+            </p>
+            <div className="grid gap-1">
+              <p className="text-foreground text-lg font-semibold">
+                Familiar with
+              </p>
+              <div className="flex gap-4">
+                {TECH_ICONS.map((icon) => (
+                  <Image
+                    key={icon.alt}
+                    src={icon.src}
+                    alt={icon.alt}
+                    width={30}
+                    height={30}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Socials */}
+            <div className="mt-2 grid gap-1">
+              <p className="text-foreground text-lg font-semibold">Socials</p>
+
+              <div className="flex gap-2">
+                {SOCIALS.map((social) => (
+                  <Link
+                    key={social.id}
+                    className="text-foreground/50 hover:text-foreground"
+                    href={social.href.path}
+                  >
+                    {social.icon}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
