@@ -9,8 +9,8 @@ export function Info() {
     <div className="border-muted relative grid gap-4 border-t border-b bg-transparent p-4 backdrop-blur-xs md:p-10">
       <div className="bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0, 0, 0, 0.7),rgba(255,255,255,0))] absolute top-0 z-[-2] h-screen w-screen"></div>
       <div className="flex items-center gap-10">
-        <Avatar className="size-30">
-          <AvatarImage src="https://github.com/shadcn.png" />
+        <Avatar className="size-30 bg-contain">
+          <AvatarImage src="/images/me.jpg" className="object-cover" />
           <AvatarFallback>MP</AvatarFallback>
         </Avatar>
         <div className="grid text-lg">
