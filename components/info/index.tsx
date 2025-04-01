@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function Info() {
   return (
-    <div className="border-muted/20 relative grid gap-4 border bg-transparent p-4 backdrop-blur-xs md:p-10">
+    <div className="border-muted/20 relative grid gap-4 border-t border-b bg-transparent p-4 backdrop-blur-xs md:p-10">
       <div className="bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0, 0, 0, 0.7),rgba(255,255,255,0))] absolute top-0 z-[-2] h-screen w-screen"></div>
       <div className="flex items-center gap-10">
         <Avatar className="size-30">
@@ -21,7 +21,8 @@ export function Info() {
             <p className="text-foreground text-lg font-semibold">
               Familiar with
             </p>
-            <div className="flex gap-4">
+
+            <div className="flex gap-4 overflow-y-auto">
               {TECH_ICONS.map((icon) => (
                 <Image
                   key={icon.alt}
@@ -37,7 +38,6 @@ export function Info() {
           {/* Socials */}
           <div className="mt-2 grid gap-1">
             <p className="text-foreground text-lg font-semibold">Socials</p>
-
             <div className="flex gap-2">
               {SOCIALS.map((social) => (
                 <Link

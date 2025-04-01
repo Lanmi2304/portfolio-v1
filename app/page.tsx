@@ -1,11 +1,13 @@
+import { ChangeLog } from "@/components/changelog";
+import { CodeBlock } from "@/components/codeblock";
 import { Info } from "@/components/info";
 import { Spotlight } from "@/components/spotlight";
 import { cn } from "@/lib/utils/cn";
 
 export default function Home() {
   return (
-    <div className="border-muted/20 relative mx-auto mt-10 max-w-3xl overflow-hidden rounded-md border">
-      <div className="relative flex h-fit w-full overflow-hidden bg-black/[0.96] p-10 antialiased">
+    <div className="border-muted/20 relative mx-auto max-w-3xl overflow-hidden rounded-md border md:mt-10">
+      <div className="relative flex h-fit w-full overflow-hidden bg-black/[0.96] p-4 antialiased md:p-10">
         <div
           className={cn(
             "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
@@ -27,6 +29,8 @@ export default function Home() {
         </div>
       </div>
       <Info />
+      <CodeBlock />
+      <ChangeLog />
     </div>
   );
 }
