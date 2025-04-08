@@ -13,28 +13,28 @@ const XIcon = createLucideIcon("X", [
 
 export const SOCIALS = [
   {
-    id: "linkedin",
+    key: "linkedin",
     icon: <Linkedin />,
     href: {
       path: "/",
     },
   },
   {
-    id: "github",
+    key: "github",
     icon: <Github />,
     href: {
       path: "/",
     },
   },
   {
-    id: "instagram",
+    key: "instagram",
     icon: <Instagram />,
     href: {
       path: "/",
     },
   },
   {
-    id: "x",
+    key: "x",
     icon: <XIcon />,
     href: {
       path: "/",

@@ -8,6 +8,10 @@ export const TECH_ICONS = [
     alt: "NextJS icon",
   },
   {
+    src: "/assets/tech-icons/typescript-svgrepo-com.svg",
+    alt: "Typescript Icon",
+  },
+  {
     src: "/assets/tech-icons/tailwindcss-icon-svgrepo-com.svg",
     alt: "Tailwindcss icon",
   },

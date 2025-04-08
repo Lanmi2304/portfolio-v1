@@ -41,7 +41,7 @@ export function Info() {
             <div className="flex gap-2">
               {SOCIALS.map((social) => (
                 <Link
-                  key={social.id}
+                  key={social.key}
                   className="text-foreground/50 hover:text-foreground"
                   href={social.href.path}
                 >

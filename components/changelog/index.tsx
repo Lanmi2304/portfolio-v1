@@ -15,7 +15,7 @@ export function ChangeLog() {
       <div className="flex flex-col items-center md:flex-row md:justify-between">
         <div className="flex items-center gap-4">
           <div className="bg-primary size-6 rounded-full ring-4"></div>
-          <p className="text-foreground/70 text-3xl">Error 404 ;)</p>
+          <p className="text-foreground/70 text-3xl">Error 404 ;(</p>
         </div>
 
         <Image
