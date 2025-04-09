@@ -1,5 +1,6 @@
 import { ChangeLog } from "@/components/changelog";
 import { CodeBlock } from "@/components/codeblock";
+import { ContactMe } from "@/components/contact-me";
 import { DownloadButton } from "@/components/download/button-download";
 import { Info } from "@/components/info";
 import { Projects } from "@/components/projects";
@@ -9,7 +10,7 @@ import { cn } from "@/lib/utils/cn";
 
 export default function Home() {
   return (
-    <div className="border-muted relative mx-auto max-w-3xl overflow-hidden rounded-md border md:mt-10">
+    <div className="border-muted relative mx-auto max-w-3xl overflow-hidden rounded-md border">
       <div className="relative flex h-fit w-full overflow-hidden bg-black/[0.96] p-4 antialiased md:p-10">
         <div
           className={cn(
@@ -42,6 +43,7 @@ export default function Home() {
       <CodeBlock />
       <ChangeLog />
       <Projects />
+      <ContactMe />
     </div>
   );
 }
