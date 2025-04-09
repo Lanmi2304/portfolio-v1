@@ -1,5 +1,6 @@
 import { ChangeLog } from "@/components/changelog";
 import { CodeBlock } from "@/components/codeblock";
+import { DownloadButton } from "@/components/download/button-download";
 import { Info } from "@/components/info";
 import { Projects } from "@/components/projects";
 import { Spotlight } from "@/components/spotlight";
@@ -28,9 +29,13 @@ export default function Home() {
           <h3 className="bg-opacity-50 text mt-4 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-3xl text-transparent">
             Fullstack Web developer
           </h3>
-          <Button size="lg" variant="secondary" className="mt-4 cursor-pointer">
-            Get in touch
-          </Button>
+
+          <div className="flex items-center gap-4">
+            <Button size="lg" className="mt-4 cursor-pointer">
+              Get in touch
+            </Button>
+            <DownloadButton />
+          </div>
         </div>
       </div>
       <Info />
