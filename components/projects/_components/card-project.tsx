@@ -86,7 +86,7 @@ export function ProjectCard({
           >
             <Link href="/">
               <Github />
-              {!project.comingSoon ? "Live preview" : "Coming soon"}
+              {!project.comingSoon ? "Code" : "Coming soon"}
             </Link>
           </Button>
         </div>
@@ -94,7 +94,7 @@ export function ProjectCard({
           <h1 className="relative z-10 text-xl font-bold text-gray-50 md:text-2xl">
             {project.title}
           </h1>
-          <p className="relative z-10 my-4 text-sm font-normal text-gray-50">
+          <p className="relative z-10 my-4 h-20 text-sm font-normal text-gray-50">
             {project.description}
           </p>
         </div>

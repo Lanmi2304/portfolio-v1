@@ -38,17 +38,18 @@ export function Info() {
           {/* Socials */}
           <div className="mt-2 grid gap-1">
             <p className="text-foreground text-lg font-semibold">Socials</p>
-            <div className="flex gap-2">
+            <ul className="flex gap-2">
               {SOCIALS.map((social) => (
-                <Link
-                  key={social.key}
-                  className="text-foreground/50 hover:text-foreground"
-                  href={social.href.path}
-                >
-                  {social.icon}
-                </Link>
+                <li key={social.key}>
+                  <Link
+                    className="text-foreground/50 hover:text-foreground"
+                    href={social.href.path}
+                  >
+                    {social.icon}
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       </div>
