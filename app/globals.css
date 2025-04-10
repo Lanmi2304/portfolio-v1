@@ -150,7 +150,6 @@
 
 body {
   background: var(--background);
-  height: 5000px;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
