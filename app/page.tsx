@@ -8,6 +8,7 @@ import { Spotlight } from "@/components/spotlight";
 import { Button } from "@/components/ui/button";
 
 import { cn } from "@/lib/utils/cn";
+import { Cog } from "lucide-react";
 
 export default function Home() {
   return (
@@ -45,6 +46,14 @@ export default function Home() {
       <ChangeLog />
       <Projects />
       <ContactMe />
+
+      <div className="border-muted fixed right-0 bottom-0 left-0 z-20 mx-auto flex h-20 max-w-3xl items-center gap-2 border bg-black p-4">
+        <Cog />
+        <p>
+          Site is in the development phase, some features may not work as
+          expected! 🔧
+        </p>
+      </div>
     </div>
   );
 }
