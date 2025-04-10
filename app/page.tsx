@@ -6,6 +6,7 @@ import { Info } from "@/components/info";
 import { Projects } from "@/components/projects";
 import { Spotlight } from "@/components/spotlight";
 import { Button } from "@/components/ui/button";
+
 import { cn } from "@/lib/utils/cn";
 
 export default function Home() {

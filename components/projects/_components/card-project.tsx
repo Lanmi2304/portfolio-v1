@@ -33,7 +33,6 @@ export function ProjectCard({
     setShowOverlay(true);
   };
 
-  console.log(active);
   return (
     <div className="group/card w-full">
       <div
