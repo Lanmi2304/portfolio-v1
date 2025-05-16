@@ -1,12 +1,11 @@
-import { ChangeLog } from "@/components/changelog";
 import { CodeBlock } from "@/components/codeblock";
 import { ContactMe } from "@/components/contact-me";
 import { DownloadButton } from "@/components/download/button-download";
 import { Info } from "@/components/info";
 import { Projects } from "@/components/projects";
 import { Spotlight } from "@/components/spotlight";
+import { Changelog } from "@/components/timeline/_components/timeline";
 import { Button } from "@/components/ui/button";
-
 import { cn } from "@/lib/utils/cn";
 import { Cog } from "lucide-react";
 
@@ -30,7 +29,7 @@ export default function Home() {
             Hi, I am Milan Pavlovic <br />
           </h1>
           <h3 className="bg-opacity-50 text mt-4 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-3xl text-transparent">
-            Fullstack Web developer
+            Frontend Web developer
           </h3>
 
           <div className="flex items-center gap-4">
@@ -43,7 +42,7 @@ export default function Home() {
       </div>
       <Info />
       <CodeBlock />
-      <ChangeLog />
+      <Changelog />
       <Projects />
       <ContactMe />
 
