@@ -47,6 +47,8 @@ export function Info() {
                   <Link
                     className="text-foreground/50 hover:text-foreground"
                     href={social.href.path}
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >
                     {social.icon}
                   </Link>

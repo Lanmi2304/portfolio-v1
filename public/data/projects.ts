@@ -10,14 +10,13 @@ export const PROJECTS = [
     image: "/images/polo-swim.png",
   },
   {
-    comingSoon: true,
+    dev: true,
     subject: "Movie library",
     type: "Frontend, Backend",
     title: "Movie Lab",
     description: "Personal application for rating, saving reviewed movies",
     link: "https://movie-lib-two.vercel.app/",
     gitLink: "https://github.com/Lanmi2304/movie-lib",
-    image:
-      "https://img.freepik.com/free-vector/coming-soon-banner-with-focus-lights_1017-33739.jpg",
+    image: "/images/movies.png",
   },
 ];

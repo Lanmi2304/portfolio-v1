@@ -16,6 +16,7 @@ interface Project {
   link: string;
   gitLink: string;
   image: string;
+  dev?: boolean;
 }
 
 export function ProjectCard({
@@ -72,7 +73,7 @@ export function ProjectCard({
             disabled={project.comingSoon}
             asChild
           >
-            <Link href={project.link}>
+            <Link href={project.link} rel="noopener noreferrer" target="_blank">
               <Radio />
               {!project.comingSoon ? "Live preview" : "Coming soon"}
             </Link>
@@ -83,7 +84,11 @@ export function ProjectCard({
             disabled={project.comingSoon}
             asChild
           >
-            <Link href={project.gitLink}>
+            <Link
+              href={project.gitLink}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <Github />
               {!project.comingSoon ? "Code" : "Coming soon"}
             </Link>
@@ -96,6 +101,12 @@ export function ProjectCard({
           <p className="relative z-10 my-4 h-20 text-sm font-normal text-gray-50">
             {project.description}
           </p>
+
+          {project.dev && (
+            <p className="relative z-10 font-semibold text-amber-600">
+              *This project is still in development🔧*
+            </p>
+          )}
         </div>
       </div>
     </div>

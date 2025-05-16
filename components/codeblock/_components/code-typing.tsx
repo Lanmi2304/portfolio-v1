@@ -8,7 +8,7 @@ const defaultProps = {
 };
 
 const codeSnippet = `// Welcome to my Portfolio! 🚀
-import { NextDeveloper } from 'lanmimilan';
+import { NextDeveloper } from '@milanpavlovic';
 
 function createAmazingWebsite() {
   const mySkills = {

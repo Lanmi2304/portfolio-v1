@@ -38,6 +38,8 @@ export function Changelog() {
           <Link
             href="https://www.udemy.com/course/the-complete-javascript-course/?couponCode=CP130525"
             className="italic"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             🔗 React – The Complete Guide (incl. Redux) by Maximilian
             Schwarzmüller
@@ -45,6 +47,8 @@ export function Changelog() {
           <Link
             href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/?kw=react&src=sac&couponCode=CP130525"
             className="italic"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             🔗 The Complete JavaScript Course by Jonas Schmedtmann
           </Link>
@@ -69,7 +73,12 @@ export function Changelog() {
           <p className="text-foreground mb-4 font-normal">
             My first website for a client! 😁🥳
           </p>
-          <Link href="https://www.polo-swim.com" className="hover:underline">
+          <Link
+            href="https://www.polo-swim.com"
+            className="hover:underline"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             🔗 PoloSwim
           </Link>
           <Image

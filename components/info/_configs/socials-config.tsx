@@ -16,28 +16,28 @@ export const SOCIALS = [
     key: "linkedin",
     icon: <Linkedin />,
     href: {
-      path: "/",
+      path: "https://www.linkedin.com/in/milan-pavlovic-b24633315/",
     },
   },
   {
     key: "github",
     icon: <Github />,
     href: {
-      path: "/",
+      path: "https://github.com/Lanmi2304",
     },
   },
   {
     key: "instagram",
     icon: <Instagram />,
     href: {
-      path: "/",
+      path: "https://www.instagram.com/pavlovic_23m/",
     },
   },
   {
     key: "x",
     icon: <XIcon />,
     href: {
-      path: "/",
+      path: "https://x.com/MilanP2304",
     },
   },
 ];
