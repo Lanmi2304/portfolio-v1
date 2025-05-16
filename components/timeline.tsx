@@ -38,7 +38,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h3 className="text-foreground text-4xl font-bold md:text-4xl">
           Changelog from my journey 👨🏼‍💻
         </h3>
-        <p className="text-foreground max-w-lg md:text-base">
+        <p className="text-foreground max-w-lg md:text-sm">
           At the beginning of 2023, I started exploring web development out of
           curiosity. Over time, it turned into something I truly enjoy and want
           to pursue professionally. Through online courses, personal projects,
@@ -74,7 +74,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         ))}
         <div
           style={{
-            height: !isMobile ? height + "px" : height - 200 + "px",
+            height: !isMobile ? height - 100 + "px" : height - 200 + "px",
           }}
           className="absolute top-0 left-6 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >

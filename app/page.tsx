@@ -5,9 +5,9 @@ import { Info } from "@/components/info";
 import { Projects } from "@/components/projects";
 import { Spotlight } from "@/components/spotlight";
 import { Changelog } from "@/components/timeline/_components/timeline";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils/cn";
 import { Cog } from "lucide-react";
+import { GetInTouchButton } from "./_components/get-in-touch-btn";
 
 export default function Home() {
   return (
@@ -33,9 +33,7 @@ export default function Home() {
           </h3>
 
           <div className="flex items-center gap-4">
-            <Button size="lg" className="mt-4 cursor-pointer">
-              Get in touch
-            </Button>
+            <GetInTouchButton />
             <DownloadButton />
           </div>
         </div>
@@ -46,7 +44,7 @@ export default function Home() {
       <Projects />
       <ContactMe />
 
-      <div className="border-muted fixed right-0 bottom-0 left-0 z-20 mx-auto flex h-20 max-w-3xl items-center gap-2 border bg-black p-4">
+      <div className="border-muted fixed right-0 bottom-0 left-0 z-50 mx-auto flex h-20 max-w-3xl items-center gap-2 border bg-black p-4">
         <Cog />
         <p>
           Site is in the development phase, some features may not work as

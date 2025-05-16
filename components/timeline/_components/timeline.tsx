@@ -51,10 +51,13 @@ export function Changelog() {
           <div className="text-foreground/70 mt-4 grid gap-2">
             A few months later, in the middle of the year landed an internship
             at HonoMedia
-            <h4 className="text-xl font-semibold text-purple-400">
-              {" "}
-              - HonoMedia internship
-            </h4>
+            <Image
+              src="/images/honomedia.png"
+              alt="honomedia logo"
+              width={170}
+              height={100}
+              className="relative -left-5"
+            />
           </div>
         </div>
       ),
