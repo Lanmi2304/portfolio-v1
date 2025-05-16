@@ -72,7 +72,7 @@ export function ProjectCard({
             disabled={project.comingSoon}
             asChild
           >
-            <Link href="/">
+            <Link href={project.link}>
               <Radio />
               {!project.comingSoon ? "Live preview" : "Coming soon"}
             </Link>
@@ -83,7 +83,7 @@ export function ProjectCard({
             disabled={project.comingSoon}
             asChild
           >
-            <Link href="/">
+            <Link href={project.gitLink}>
               <Github />
               {!project.comingSoon ? "Code" : "Coming soon"}
             </Link>

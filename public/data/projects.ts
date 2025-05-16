@@ -6,7 +6,7 @@ export const PROJECTS = [
     description:
       "Polo Swim offers personalized swimming lessons for all ages in Belgrade. Improve your technique, build confidence, and enjoy one-on-one sessions with certified instructors.",
     link: "https://www.polo-swim.com",
-    gitLink: "https://www.github.com",
+    gitLink: "https://github.com/Lanmi2304/swiming-instructor",
     image: "/images/polo-swim.png",
   },
   {
@@ -15,8 +15,8 @@ export const PROJECTS = [
     type: "Frontend, Backend",
     title: "Movie Lab",
     description: "Personal application for rating, saving reviewed movies",
-    link: "https://www.polo-swim.com",
-    gitLink: "https://www.github.com",
+    link: "https://movie-lib-two.vercel.app/",
+    gitLink: "https://github.com/Lanmi2304/movie-lib",
     image:
       "https://img.freepik.com/free-vector/coming-soon-banner-with-focus-lights_1017-33739.jpg",
   },
