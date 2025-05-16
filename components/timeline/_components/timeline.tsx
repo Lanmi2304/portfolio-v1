@@ -9,7 +9,7 @@ export function Changelog() {
       title: "2023",
       content: (
         <div>
-          <p className="text-foreground mb-8 text-xs font-normal md:text-sm">
+          <p className="text-foreground mb-8 font-normal md:text-sm">
             Successfully completed a comprehensive program at ITAcademy,
             specializing in FrontEnd JavaScript Web development
           </p>
@@ -29,7 +29,7 @@ export function Changelog() {
       title: "2024",
       content: (
         <div className="flex flex-col gap-2">
-          <p className="text-foreground/70 mb-8 font-normal">
+          <p className="text-foreground/70 mb-8 font-normal md:text-sm">
             In 2024, I wanted to deepen my understanding, so I took a few
             high-quality courses on Udemy, focusing on JavaScript and React –
             the technologies I’m most passionate about and plan to work with
@@ -60,7 +60,7 @@ export function Changelog() {
       ),
     },
     {
-      title: "Early 2025",
+      title: "2025",
       content: (
         <div className="flex flex-col gap-4">
           <p className="text-foreground mb-4 font-normal">

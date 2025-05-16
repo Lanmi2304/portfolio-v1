@@ -1,4 +1,5 @@
 "use client";
+import { useIsMobile } from "@/lib/hooks/use-is-mobile";
 import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -26,17 +27,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+  const isMobile = useIsMobile();
 
   return (
-    <div
-      className="bg-background border-muted w-full border-t font-sans"
-      ref={containerRef}
-    >
+    <div className="bg-background w-full border-t font-sans" ref={containerRef}>
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-20 md:px-10">
         <h3 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-4xl font-bold text-transparent md:text-4xl">
           Changelog from my journey 💻
         </h3>
-        <p className="text-foreground max-w-lg text-sm md:text-base">
+        <p className="text-foreground max-w-lg md:text-base">
           At the beginning of 2023, I started exploring web development out of
           curiosity. Over time, it turned into something I truly enjoy and want
           to pursue professionally. Through online courses, personal projects,
@@ -72,7 +71,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         ))}
         <div
           style={{
-            height: height + "px",
+            height: !isMobile ? height + "px" : height - 200 + "px",
           }}
           className="absolute top-0 left-6 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
