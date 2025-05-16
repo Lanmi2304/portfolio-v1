@@ -60,7 +60,7 @@ export default function CodeTyping() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="border-muted w-full overflow-hidden border-b bg-black p-4 font-mono text-xs shadow-lg max-[400px]:text-[0.6rem] sm:text-sm dark:bg-black/40"
+      className="border-muted w-full overflow-hidden border-b bg-black bg-black/40 p-4 font-mono text-xs shadow-lg max-[400px]:text-[0.6rem] sm:text-sm"
     >
       {/* Fake MacOS Window Buttons */}
       <div className="mb-3 flex items-center gap-1.5">

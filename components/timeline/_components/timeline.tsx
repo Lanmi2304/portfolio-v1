@@ -9,7 +9,7 @@ export function Changelog() {
       title: "2023",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="text-foreground mb-8 text-xs font-normal md:text-sm">
             Successfully completed a comprehensive program at ITAcademy,
             specializing in FrontEnd JavaScript Web development
           </p>
