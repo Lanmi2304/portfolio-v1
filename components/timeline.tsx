@@ -32,10 +32,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="bg-background border-muted w-full border-t font-sans"
       ref={containerRef}
     >
-      <div className="mx-auto max-w-7xl px-10 py-20">
-        <h2 className="text-foreground mb-4 max-w-4xl text-lg md:text-4xl">
+      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-20 md:px-10">
+        <h3 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-4xl font-bold text-transparent md:text-4xl">
           Changelog from my journey 💻
-        </h2>
+        </h3>
         <p className="text-foreground max-w-lg text-sm md:text-base">
           At the beginning of 2023, I started exploring web development out of
           curiosity. Over time, it turned into something I truly enjoy and want
@@ -54,7 +54,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             className="flex justify-start pt-10 md:gap-10 md:pt-40"
           >
             <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
-              <div className="absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-black md:left-3">
+              <div className="absolute left-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-black md:left-1.5">
                 <div className="border-muted h-4 w-4 rounded-full bg-neutral-800 p-2" />
               </div>
               <h3 className="foreground hidden text-xl font-bold md:block md:pl-20 md:text-5xl">
@@ -74,7 +74,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute top-0 left-8 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+          className="absolute top-0 left-6 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
           <motion.div
             style={{
