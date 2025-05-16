@@ -45,7 +45,7 @@ export default function Home() {
       <ContactMe />
 
       <div className="border-muted fixed right-0 bottom-0 left-0 z-50 mx-auto flex h-20 max-w-3xl items-center gap-2 border bg-black p-4">
-        <Cog />
+        <Cog className="size-14 md:size-8" />
         <p>
           Site is in the development phase, some features may not work as
           expected! 🔧
