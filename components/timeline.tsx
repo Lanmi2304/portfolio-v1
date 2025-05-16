@@ -30,10 +30,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const isMobile = useIsMobile();
 
   return (
-    <div className="bg-background w-full border-t font-sans" ref={containerRef}>
+    <div
+      className="bg-background border-muted w-full border-t font-sans"
+      ref={containerRef}
+    >
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-20 md:px-10">
-        <h3 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-4xl font-bold text-transparent md:text-4xl">
-          Changelog from my journey 💻
+        <h3 className="text-foreground text-4xl font-bold md:text-4xl">
+          Changelog from my journey 👨🏼‍💻
         </h3>
         <p className="text-foreground max-w-lg md:text-base">
           At the beginning of 2023, I started exploring web development out of
