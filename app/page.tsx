@@ -12,10 +12,10 @@ import { GetInTouchButton } from "./_components/get-in-touch-btn";
 export default function Home() {
   return (
     <div className="border-muted relative mx-auto max-w-3xl overflow-hidden rounded-md border">
-      <div className="relative flex h-fit w-full overflow-hidden bg-black/[0.96] p-4 antialiased md:p-10">
+      <div className="relative z-0 flex h-fit w-full overflow-hidden bg-black/[0.96] p-4 antialiased md:p-10">
         <div
           className={cn(
-            "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
+            "pointer-events-none absolute inset-0 mask-r-from-90% mask-b-from-20% [background-size:40px_40px] select-none",
             "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]",
           )}
         />
@@ -32,7 +32,7 @@ export default function Home() {
             Frontend Web developer
           </h3>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 brightness-100">
             <GetInTouchButton />
             <DownloadButton />
           </div>
