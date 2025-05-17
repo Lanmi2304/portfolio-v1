@@ -9,10 +9,17 @@ export function Changelog() {
       title: "2023",
       content: (
         <div>
-          <p className="text-foreground mb-8 font-normal md:text-sm">
+          <p className="text-foreground mb-4 font-normal md:text-sm">
             Successfully completed a comprehensive program at ITAcademy,
             specializing in FrontEnd JavaScript Web development
           </p>
+          <Image
+            src={"/images/it-akademija.jpg"}
+            alt="ITAcademy logo"
+            width={100}
+            height={100}
+            className="mb-4 rounded-xl"
+          />
           <div className="w-full">
             <Image
               src="/images/it-academy.jpg"
