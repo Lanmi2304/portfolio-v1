@@ -42,6 +42,13 @@ export function Changelog() {
             the technologies I’m most passionate about and plan to work with
             professionally. Some of the courses I completed:
           </p>
+          <Image
+            src="/images/udemy.jpg"
+            alt="Udemy logo"
+            width={100}
+            height={100}
+            className="rounded-xl"
+          />
           <Link
             href="https://www.udemy.com/course/the-complete-javascript-course/?couponCode=CP130525"
             className="italic"
@@ -60,8 +67,12 @@ export function Changelog() {
             🔗 The Complete JavaScript Course by Jonas Schmedtmann
           </Link>
           <div className="text-foreground/70 mt-4 grid gap-2">
-            A few months later, in the middle of the year landed an internship
-            at HonoMedia
+            <p>
+              A few months later, in the middle of the year landed an internship
+              at{" "}
+              <span className="text-foreground font-semibold">HonoMedia</span>
+            </p>
+
             <Image
               src="/images/honomedia.png"
               alt="honomedia logo"
