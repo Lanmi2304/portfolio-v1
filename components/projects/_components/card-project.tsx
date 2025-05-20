@@ -46,20 +46,22 @@ export function ProjectCard({
       >
         <div
           className={cn(
-            "absolute top-0 left-0 h-full w-full items-center justify-center opacity-80 transition duration-300 md:bg-transparent md:group-hover/card:bg-black",
+            "absolute top-0 left-0 h-full w-full opacity-80 transition duration-300 md:bg-transparent md:group-hover/card:bg-black",
             isMobile && showOverlay && active === project.title
               ? "bg-black"
               : null,
           )}
         ></div>
-        <div className="z-10 flex flex-row items-center space-x-4">
-          <div className="flex flex-col">
-            <p className="relative z-10 text-base font-normal text-gray-50">
-              {project.subject}
-            </p>
-            <p className="text-sm text-gray-400">{project.type}</p>
-          </div>
+
+        <div className="flex flex-col">
+          <p className="relative z-10 text-base font-normal text-gray-50">
+            {project.subject}
+          </p>
+          <p className="text-foreground relative z-10 text-sm">
+            {project.type}
+          </p>
         </div>
+
         <div
           className={cn(
             "relative z-10 hidden justify-center gap-4 opacity-100 md:group-hover/card:flex",
@@ -94,7 +96,12 @@ export function ProjectCard({
             </Link>
           </Button>
         </div>
-        <div>
+        <div
+          className={cn(
+            "hidden group-hover/card:block",
+            isMobile && active === project.title ? "block" : "hidden",
+          )}
+        >
           <h1 className="relative z-10 text-xl font-bold text-gray-50 md:text-2xl">
             {project.title}
           </h1>
