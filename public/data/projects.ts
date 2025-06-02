@@ -19,4 +19,14 @@ export const PROJECTS = [
     gitLink: "https://github.com/Lanmi2304/swiming-instructor",
     image: "/images/polo-swim.png",
   },
+  {
+    subject: "Britva Barbershop",
+    type: "Frontend",
+    title: "Britva Barbershop",
+    description:
+      "Britva Barbershop is a modern barbershop located in Belgrade, offering a range of grooming services for men. Experience a stylish haircut, beard trim, and a relaxing atmosphere.",
+    link: "https://barber-site-psi.vercel.app/",
+    gitLink: "https://github.com/Lanmi2304/britva-barbershop",
+    image: "/images/britva-barbershop.png",
+  },
 ];
