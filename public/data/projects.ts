@@ -29,4 +29,14 @@ export const PROJECTS = [
     gitLink: "https://github.com/Lanmi2304/britva-barbershop",
     image: "/images/britva-barbershop.png",
   },
+  {
+    subject: "Wordle Game",
+    type: "Frontend",
+    title: "Wordle",
+    description:
+      "Wordle is a word-guessing game where you have six attempts to find a hidden five-letter English word. ",
+    link: "https://wordle-omega-umber.vercel.app/",
+    gitLink: "https://github.com/Lanmi2304/wordle",
+    image: "/images/wordle.png",
+  },
 ];
