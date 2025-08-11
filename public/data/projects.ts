@@ -39,4 +39,14 @@ export const PROJECTS = [
     gitLink: "https://github.com/Lanmi2304/wordle",
     image: "/images/wordle.png",
   },
+  {
+    subject: "Flamingo Freight INC",
+    type: "Frontend",
+    title: "Flamingo Freight",
+    description:
+      "Flamingo Freight is a logistics company specializing in freight transportation and supply chain solutions.",
+    link: "https://www.flamingofreightinc.com",
+    gitLink: "https://github.com/Lanmi2304/flamingo-freight-prod",
+    image: "/images/www.flamingofreightinc.com_.png",
+  },
 ];
