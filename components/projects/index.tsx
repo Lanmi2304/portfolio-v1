@@ -11,11 +11,6 @@ export function Projects() {
         My projects
       </h3>
 
-      <p className="text-foreground/50 text-sm">
-        * If you are on mobile device click the card to preview the project,
-        otherwise just hover over the desired one *
-      </p>
-
       <div className="grid grid-rows-1 gap-4 md:grid-cols-2">
         {PROJECTS.map((project) => (
           // <div key={project.title} onClick={() => setActive(project.title)}>
