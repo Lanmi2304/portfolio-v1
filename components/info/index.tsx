@@ -18,7 +18,7 @@ export function Info() {
         </Avatar>
         <div className="grid text-lg">
           <p className="text-foreground/70 text-lg">
-            Im 23y old web developer from Belgrade, Serbia
+            I&apos;m 23 years old web developer from Belgrade, Serbia
           </p>
           <div className="grid gap-1">
             <p className="text-foreground text-lg font-semibold">
