@@ -17,7 +17,7 @@ interface Project {
 
 export function ProjectCard1({ project }: { project: Project }) {
   return (
-    <div className="group/card flex h-fit w-full flex-col justify-between rounded-xl border p-2.5 transition-all hover:scale-105 md:h-[420px]">
+    <div className="group/card flex h-fit w-full flex-col justify-between rounded-xl border p-2.5 transition-all hover:scale-105 md:h-[450px]">
       <div>
         <div className="mb-3 flex items-center gap-1.5">
           <div className="h-3 w-3 rounded-full bg-red-500" />
@@ -29,6 +29,10 @@ export function ProjectCard1({ project }: { project: Project }) {
 
         <div className="mt-3">
           <h3 className="text-lg font-semibold">{project.title}</h3>
+          <p className="mb-2 text-sm text-white">{project.type}</p>
+          {project.dev && (
+            <p className="text-sm text-amber-500">⚠️ In Development</p>
+          )}
           <p className="text-muted-foreground line-clamp-3 text-sm">
             {project.description}
           </p>
