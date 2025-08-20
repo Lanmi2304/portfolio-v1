@@ -12,7 +12,7 @@ interface Project {
   link: string;
   gitLink: string;
   image: string | StaticImageData;
-  dev?: boolean;
+  dev?: string;
 }
 
 export function ProjectCard1({ project }: { project: Project }) {
@@ -31,7 +31,7 @@ export function ProjectCard1({ project }: { project: Project }) {
           <h3 className="text-lg font-semibold">{project.title}</h3>
           <p className="mb-2 text-sm text-white">{project.type}</p>
           {project.dev && (
-            <p className="text-sm text-amber-500">⚠️ In Development</p>
+            <p className="text-sm text-amber-500">⚠️ {project.dev}</p>
           )}
           <p className="text-muted-foreground line-clamp-3 text-sm">
             {project.description}

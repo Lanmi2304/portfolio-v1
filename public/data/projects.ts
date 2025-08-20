@@ -7,7 +7,7 @@ import Kanban from "@/public/images/kanban-board.webp";
 
 export const PROJECTS = [
   {
-    dev: true,
+    dev: "In Development",
     subject: "Movie library",
     type: "Frontend, Backend",
     title: "Movie Lab",
@@ -57,7 +57,7 @@ export const PROJECTS = [
     image: Flamingo,
   },
   {
-    dev: true,
+    dev: "Currently working on",
     subject: "Kanban Board",
     type: "Frontend, Backend",
     title: "Kanban Board",
