@@ -3,6 +3,7 @@ import PoloSwim from "@/public/images/www.polo-swim.com_.webp";
 import Britva from "@/public/images/barber-site-psi.vercel.app_.webp";
 import Wordle from "@/public/images/wordle-omega-umber.vercel.app_.webp";
 import Flamingo from "@/public/images/www.flamingofreightinc.com_ (1).webp";
+import Kanban from "@/public/images/kanban-board.webp";
 
 export const PROJECTS = [
   {
@@ -54,5 +55,16 @@ export const PROJECTS = [
     link: "https://www.flamingofreightinc.com",
     gitLink: "https://github.com/Lanmi2304/flamingo-freight-prod",
     image: Flamingo,
+  },
+  {
+    dev: true,
+    subject: "Kanban Board",
+    type: "Frontend, Backend",
+    title: "Kanban Board",
+    description:
+      "A web-based Kanban board application for managing tasks and projects.",
+    link: "https://kanban-board-eosin-seven.vercel.app/",
+    gitLink: "https://github.com/Lanmi2304/kanban-board",
+    image: Kanban,
   },
 ];
