@@ -126,7 +126,7 @@ export function ContactForm() {
               <FormControl>
                 <Textarea
                   rows={5}
-                  className="peer bg-transparent"
+                  className="peer resize-none bg-transparent"
                   onKeyDown={(event) => preventBreakRow(event)}
                   onInput={adjustTextareaHeight}
                   {...field}
