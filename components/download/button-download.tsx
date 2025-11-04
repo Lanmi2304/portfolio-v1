@@ -18,7 +18,7 @@ export function DownloadButton() {
     }
 
     link.href = url;
-    link.download = "milan_pavlovic_resume.pdf";
+    link.download = "milan_pavlovic_cv.pdf";
     link.click();
     window.URL.revokeObjectURL(url);
   };
