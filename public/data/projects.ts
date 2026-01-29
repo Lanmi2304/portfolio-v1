@@ -1,9 +1,11 @@
-import MovieLib from "@/public/images/movie-lib-two.vercel.app_.webp";
+// import MovieLib from "@/public/images/movie-lib-two.vercel.app_.webp";
 import PoloSwim from "@/public/images/www.polo-swim.com_.webp";
 import Britva from "@/public/images/barber-site-psi.vercel.app_.webp";
 import Wordle from "@/public/images/wordle-omega-umber.vercel.app_.webp";
 import Flamingo from "@/public/images/www.flamingofreightinc.com_ (1).webp";
 import Kanban from "@/public/images/kanban-board.webp";
+import WSForge from "@/public/images/ws-forge.png";
+import Ramonda from "@/public/images/ramonda.png";
 
 export const PROJECTS = [
   {
@@ -17,6 +19,16 @@ export const PROJECTS = [
     image: Flamingo,
   },
   {
+    subject: "WS Forge",
+    type: "Frontend",
+    title: "WS Forge",
+    description:
+      "WS Forge is a website agency for creating frontend presentational websites for your business.",
+    link: "https://www.ws-forge.com",
+    gitLink: "https://github.com/Lanmi2304/ws-forge",
+    image: WSForge,
+  },
+  {
     dev: true,
     subject: "Kanban Board",
     type: "Frontend, Backend",
@@ -27,16 +39,16 @@ export const PROJECTS = [
     gitLink: "https://github.com/Lanmi2304/kanban-board",
     image: Kanban,
   },
-  // {
-  //   dev: true,
-  //   subject: "Movie library",
-  //   type: "Frontend, Backend",
-  //   title: "Movie Lab",
-  //   description: "Personal application for rating, saving reviewed movies",
-  //   link: "https://movie-lib-two.vercel.app/",
-  //   gitLink: "https://github.com/Lanmi2304/movie-lib",
-  //   image: MovieLib,
-  // },
+  {
+    dev: true,
+    subject: "Ramonda Production",
+    type: "Frontend, Backend",
+    title: "Ramonda Production",
+    description: "Personal application for rating, saving reviewed movies",
+    link: "https://ramonda-dev.vercel.app/",
+    gitLink: "https://github.com/Lanmi2304/ramonda-dev",
+    image: Ramonda,
+  },
   {
     subject: "Swimming instructor",
     type: "Frontend",
